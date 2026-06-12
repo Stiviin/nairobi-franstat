@@ -31,9 +31,11 @@ export const VERIFY_TOKEN_TTL_MS = 1000 * 60 * 60 * 24;
 /** Password reset token lifetime – 1 hour */
 export const RESET_TOKEN_TTL_MS = 1000 * 60 * 60;
 
-const _jwtSecretValue = process.env.JWT_SECRET;
-if (!_jwtSecretValue) throw new Error("JWT_SECRET environment variable is not set. Add it to .env");
-const JWT_SECRET = new TextEncoder().encode(_jwtSecretValue);
+function getJwtSecret(): Uint8Array {
+  const secret = process.env.JWT_SECRET;
+  if (!secret) throw new Error("JWT_SECRET environment variable is not set. Add it to .env");
+  return new TextEncoder().encode(secret);
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TYPES
@@ -76,14 +78,14 @@ export async function signToken(payload: {
     .setSubject(payload.sub)
     .setIssuedAt()
     .setExpirationTime(`${SESSION_DURATION_SECONDS}s`)
-    .sign(JWT_SECRET);
+    .sign(getJwtSecret());
 }
 
 export async function verifyToken(
   token: string
 ): Promise<SessionPayload | null> {
   try {
-    const { payload } = await jwtVerify(token, JWT_SECRET, {
+    const { payload } = await jwtVerify(token, getJwtSecret(), {
       algorithms: ["HS256"],
     });
     return payload as SessionPayload;
