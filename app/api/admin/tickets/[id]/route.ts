@@ -6,7 +6,7 @@ import { z, ZodError } from "zod";
 import prisma from "@/lib/prisma";
 import { requireAdmin, audit } from "@/lib/adminGuard";
 
-type Ctx = { params: { id: string } };
+type Ctx = { params: Promise<{ id: string }> };
 
 const patchSchema = z.object({
   status:   z.enum(["OPEN","IN_PROGRESS","RESOLVED","CLOSED"]).optional(),
@@ -17,16 +17,18 @@ export async function PATCH(req: Request, { params }: Ctx) {
   const guard = await requireAdmin();
   if (!guard.ok) return guard.response;
 
+  const { id } = await params;
+
   try {
     const fields = patchSchema.parse(await req.json());
-    const ticket = await prisma.supportTicket.findUnique({ where: { id: params.id }, select: { id: true, userId: true, subject: true } });
+    const ticket = await prisma.supportTicket.findUnique({ where: { id }, select: { id: true, userId: true, subject: true } });
     if (!ticket) return NextResponse.json({ error: "Ticket not found." }, { status: 404 });
 
     const updateData: Record<string, unknown> = {};
     if (fields.status)   updateData.status = fields.status;
     if (fields.response) { updateData.response = fields.response; updateData.respondedBy = guard.session.sub; updateData.respondedAt = new Date(); }
 
-    const updated = await prisma.supportTicket.update({ where: { id: params.id }, data: updateData as any });
+    const updated = await prisma.supportTicket.update({ where: { id }, data: updateData as any });
 
     // Notify customer of response
     if (fields.response && ticket.userId) {
@@ -35,7 +37,7 @@ export async function PATCH(req: Request, { params }: Ctx) {
       });
     }
 
-    await audit({ adminId: guard.session.sub, action: "TICKET_UPDATED", entity: "SupportTicket", entityId: params.id, metadata: { status: fields.status }, req });
+    await audit({ adminId: guard.session.sub, action: "TICKET_UPDATED", entity: "SupportTicket", entityId: id, metadata: { status: fields.status }, req });
     return NextResponse.json({ ok: true, ticket: updated });
   } catch (err) {
     if (err instanceof ZodError) return NextResponse.json({ error: err.errors[0]?.message }, { status: 422 });
