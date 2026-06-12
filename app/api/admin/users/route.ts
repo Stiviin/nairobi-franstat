@@ -84,7 +84,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true, user }, { status: 201 });
   } catch (err) {
-    if (err instanceof ZodError) return NextResponse.json({ error: err.errors[0]?.message }, { status: 422 });
+    if (err instanceof ZodError) return NextResponse.json({ error: err.issues[0]?.message }, { status: 422 });
     console.error("[admin/users POST]", err);
     return NextResponse.json({ error: "Something went wrong." }, { status: 500 });
   }

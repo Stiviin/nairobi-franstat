@@ -110,7 +110,7 @@ export async function PATCH(
   try { fields = patchSchema.parse(body); }
   catch (err) {
     if (err instanceof ZodError)
-      return NextResponse.json({ error: err.errors[0]?.message ?? "Invalid input." }, { status: 422 });
+      return NextResponse.json({ error: err.issues[0]?.message ?? "Invalid input." }, { status: 422 });
     throw err;
   }
 

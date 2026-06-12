@@ -40,7 +40,7 @@ export async function PATCH(req: Request, { params }: Ctx) {
     await audit({ adminId: guard.session.sub, action: "TICKET_UPDATED", entity: "SupportTicket", entityId: id, metadata: { status: fields.status }, req });
     return NextResponse.json({ ok: true, ticket: updated });
   } catch (err) {
-    if (err instanceof ZodError) return NextResponse.json({ error: err.errors[0]?.message }, { status: 422 });
+    if (err instanceof ZodError) return NextResponse.json({ error: err.issues[0]?.message }, { status: 422 });
     return NextResponse.json({ error: "Something went wrong." }, { status: 500 });
   }
 }

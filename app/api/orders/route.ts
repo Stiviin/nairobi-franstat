@@ -124,7 +124,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: stkErr.message ?? "M-Pesa prompt could not be sent. Please try again." }, { status: 502 });
     }
   } catch (err) {
-    if (err instanceof ZodError) return NextResponse.json({ error: err.errors[0]?.message ?? "Invalid input." }, { status: 422 });
+    if (err instanceof ZodError) return NextResponse.json({ error: err.issues[0]?.message ?? "Invalid input." }, { status: 422 });
     console.error("[orders] error:", err);
     return NextResponse.json({ error: "Something went wrong." }, { status: 500 });
   }
