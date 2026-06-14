@@ -438,7 +438,7 @@ export default function StaffDashboard() {
         {/* ── Sidebar ── */}
         <aside className="sidebar">
           <div className="sb-logo">
-            <img src="/logo.png" alt="FrankStat" className="sb-logo-img"/>
+            <img src="/logo.png" alt="FranStat" className="sb-logo-img"/>
             <span className="sb-pill">Staff Portal</span>
           </div>
           <nav className="sb-nav">

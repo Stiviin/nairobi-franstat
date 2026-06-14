@@ -78,9 +78,9 @@ const QUANTITY_PRICING: Record<string, { base: number; unit: string }> = {
 };
 
 const REVIEWS: Review[] = [
-  { name: "Aisha Kamau",    role: "Event Organiser, Nairobi",  text: "Frankstat delivered 50 banners overnight for our conference. Absolutely stunning quality — every colour popped perfectly!", rating: 5 },
+  { name: "Aisha Kamau",    role: "Event Organiser, Nairobi",  text: "Franstat delivered 50 banners overnight for our conference. Absolutely stunning quality — every colour popped perfectly!", rating: 5 },
   { name: "Brian Otieno",   role: "Retail Shop Owner",         text: "My shop signage looks incredible. The 3D letters really make the facade stand out. Customers keep complimenting it.", rating: 5 },
-  { name: "Cynthia Wanjiku",role: "HR Manager, Safaricom",     text: "We order branded merchandise quarterly. Frankstat's sublimation work is consistently world-class. Never missed a deadline.", rating: 5 },
+  { name: "Cynthia Wanjiku",role: "HR Manager, Safaricom",     text: "We order branded merchandise quarterly. Franstat's sublimation work is consistently world-class. Never missed a deadline.", rating: 5 },
   { name: "David Mwangi",   role: "Startup Founder",           text: "Got 500 business cards with spot UV. Feels premium, looks premium. My clients always ask where I printed them.", rating: 5 },
 ];
 
@@ -94,7 +94,7 @@ const PORTFOLIO: PortfolioItem[] = [
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
-export default function FrankstatPage() {
+export default function FranstatPage() {
   const router = useRouter();
 
   // Auth state
@@ -1118,7 +1118,7 @@ export default function FrankstatPage() {
       {/* ── NAV ── */}
       <nav className="nav">
         <a onClick={() => scrollTo("home")} style={{ cursor: "pointer", display: "flex", alignItems: "center", flexShrink: 0 }}>
-          <img src="/logo.png" alt="Frankstat Logo" style={{ height: "42px", width: "auto", objectFit: "contain" }} />
+          <img src="/logo.png" alt="Franstat Logo" style={{ height: "42px", width: "auto", objectFit: "contain" }} />
         </a>
         <ul className="nav-links">
           {["home", "services", "portfolio", "order", "contact"].map((s) => (
@@ -1218,7 +1218,7 @@ export default function FrankstatPage() {
           <h1><em>Print that Commands Attention.</em> </h1>
           <p className="hero-desc">
             From vinyl banners to 3D signage, sublimation to business cards —
-            Frankstat delivers sharp, vibrant, professional prints that make your brand impossible to ignore.
+            Franstat delivers sharp, vibrant, professional prints that make your brand impossible to ignore.
           </p>
           <div className="hero-btns">
             <button className="btn-primary" onClick={() => scrollTo("order")}>Get Instant Quote</button>
@@ -1244,7 +1244,7 @@ export default function FrankstatPage() {
             <div className="hero-img-placeholder">
               <img
                 src="/logo.png"
-                alt="Frankstat"
+                alt="Franstat"
                 style={{ width: "75%", maxWidth: "320px", height: "auto", objectFit: "contain", filter: "drop-shadow(0 4px 24px rgba(193,154,74,0.5))" }}
               />
             </div>
@@ -1284,7 +1284,7 @@ export default function FrankstatPage() {
 
       {/* ── WHY US ── */}
       <section className="why-section">
-        <div className="section-label">Why Frankstat</div>
+        <div className="section-label">Why Franstat</div>
         <div className="section-divider" />
         <h2 className="section-title">Built for Quality, Speed &amp; Value</h2>
         <div className="why-grid">
@@ -1483,7 +1483,7 @@ export default function FrankstatPage() {
           <div className="auth-wall-icon">🔐</div>
           <div className="auth-wall-title">Sign in to Place an Order</div>
           <p className="auth-wall-desc">
-            You need a Frankstat account to place orders and pay via M-Pesa.
+            You need a Franstat account to place orders and pay via M-Pesa.
             It only takes a minute — it&apos;s free.
           </p>
           <div className="auth-wall-btns">
@@ -1726,7 +1726,7 @@ export default function FrankstatPage() {
 
             {/* Brand + social */}
             <div className="footer-brand-col">
-              <img src="/logo.png" alt="Frankstat" style={{ height: "48px", width: "auto", objectFit: "contain", marginBottom: "0.75rem" }} />
+              <img src="/logo.png" alt="Franstat" style={{ height: "48px", width: "auto", objectFit: "contain", marginBottom: "0.75rem" }} />
               <p className="footer-brand-desc">
                 Nairobi&apos;s trusted printing partner for businesses, events &amp; entrepreneurs.
                 Premium prints. Fast turnaround. Fair pricing.
@@ -1785,7 +1785,7 @@ export default function FrankstatPage() {
               {[
                 { icon: "📍", text: "Odeon, Nairobi" },
                 { icon: "📞", text: "+254 700 000 000" },
-                { icon: "📧", text: "hello@frankstat.co.ke" },
+                { icon: "📧", text: "hello@franstat.co.ke" },
                 { icon: "🕐", text: "Mon–Sat · 8am – 8pm" },
               ].map((c) => (
                 <div key={c.text} className="footer-contact-item">
@@ -1800,7 +1800,7 @@ export default function FrankstatPage() {
 
         {/* Bottom bar */}
         <div className="footer-bottom">
-          <div className="footer-copy" suppressHydrationWarning>© {new Date().getFullYear()} Frankstat Printing Solutions. All rights reserved.</div>
+          <div className="footer-copy" suppressHydrationWarning>© {new Date().getFullYear()} Franstat Printing Solutions. All rights reserved.</div>
           <div className="footer-bottom-links">
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>

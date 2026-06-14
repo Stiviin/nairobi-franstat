@@ -451,7 +451,7 @@ export default function LoginPage() {
                 <div className="form-eyebrow">Welcome Back</div>
                 <div className="form-title">Sign In</div>
                 <p className="form-subtitle">
-                  New to Frankstat?{" "}
+                  New to Franstat?{" "}
                   <Link href="/signup">Create a free account</Link>
                 </p>
 
@@ -523,7 +523,7 @@ export default function LoginPage() {
         {/* ── VISUAL PANEL ── */}
         <div className="panel-visual">
           <Link href="/" className="panel-logo">
-            <img src="/logo.png" alt="Frankstat" className="logo-img" />
+            <img src="/logo.png" alt="Franstat" className="logo-img" />
           </Link>
 
           <div className="panel-middle">
@@ -533,7 +533,7 @@ export default function LoginPage() {
               <span className="m">All in one</span> <span className="y">place.</span>
             </h2>
             <p className="panel-sub">
-              Track your prints in real-time, reorder favourites, and manage invoices — all from your Frankstat dashboard.
+              Track your prints in real-time, reorder favourites, and manage invoices — all from your Franstat dashboard.
             </p>
 
             <div className="orders-badge">
@@ -553,7 +553,7 @@ export default function LoginPage() {
           </div>
 
           <div className="panel-bottom">
-            <p className="panel-bottom-text">© {new Date().getFullYear()} Frankstat Printing Solutions · Nairobi, Kenya</p>
+            <p className="panel-bottom-text">© {new Date().getFullYear()} Franstat Printing Solutions · Nairobi, Kenya</p>
           </div>
         </div>
       </div>

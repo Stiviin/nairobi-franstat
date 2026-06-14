@@ -534,7 +534,7 @@ function ProgressTracker({ order }: { order: Order }) {
                 }}
               >
                 Artwork not yet uploaded. Please send your design file to
-                hello@frankstat.co.ke or WhatsApp +254 700 000 000 to avoid
+                hello@franstat.co.ke or WhatsApp +254 700 000 000 to avoid
                 delays.
               </div>
             </div>
@@ -716,7 +716,7 @@ export default function UserDashboard() {
   const printReceipt = (p: PaymentRecord) => {
     const w = window.open("", "_blank", "width=520,height=700");
     if (!w) return;
-    const html = `<!DOCTYPE html><html><head><title>Frankstat Receipt</title>
+    const html = `<!DOCTYPE html><html><head><title>Franstat Receipt</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
   body{font-family:'Segoe UI',Arial,sans-serif,monospace,roboto;background:#fff;color:#1C1410;padding:40px 32px;}
@@ -733,7 +733,7 @@ export default function UserDashboard() {
   @media print{body{padding:24px;}}
 </style></head><body>
   <div class="logo">FRAN<span>STAT</span></div>
-  <div class="sub">Frankstat Printing Solutions · Nairobi, Kenya</div>
+  <div class="sub">Franstat Printing Solutions · Nairobi, Kenya</div>
   <h2>Official Payment Receipt</h2>
   <div class="amount">KES ${p.amount.toLocaleString()}</div>
   <div class="status-ok">✓ ${p.status}</div>
@@ -744,8 +744,8 @@ export default function UserDashboard() {
   <div class="row"><span class="lbl">M-Pesa Code</span><span class="val">${p.mpesaRef || "—"}</span></div>
   <div class="row"><span class="lbl">Date</span><span class="val">${new Date(p.date ?? p.createdAt ?? new Date().toISOString()).toLocaleString("en-GB", { day: "2-digit", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" })}</span></div>
   <div class="footer">
-    This is an official Frankstat receipt.<br>
-    Keep this for your records. Contact us at hello@frankstat.co.ke for any queries.<br>
+    This is an official Franstat receipt.<br>
+    Keep this for your records. Contact us at hello@franstat.co.ke for any queries.<br>
     Generated ${new Date().toLocaleString("en-GB")}
   </div>
   <script>window.onload=()=>{window.print();}</script>
@@ -1231,7 +1231,7 @@ export default function UserDashboard() {
         {/* ══ SIDEBAR ══ */}
         <aside className={`sidebar${sidebarOpen ? "" : " closed"}`}>
           <Link href="/" className="sb-logo">
-            <img src="/logo.png" alt="FrankStat" className="sb-logo-img"/>
+            <img src="/logo.png" alt="FranStat" className="sb-logo-img"/>
             {sidebarOpen && (
               <span className="pill">MY ACCOUNT</span>
             )}
@@ -1748,7 +1748,7 @@ export default function UserDashboard() {
                   }}
                 >
                   Live progress of all your active orders, updated by the
-                  Frankstat team in real time.
+                  Franstat team in real time.
                 </p>
                 {activeOrders.length === 0 ? (
                   <div

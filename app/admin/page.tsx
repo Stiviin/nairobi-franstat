@@ -1,5 +1,5 @@
 /**
- * app/admin/page.tsx — Frankstat Admin Dashboard
+ * app/admin/page.tsx — Franstat Admin Dashboard
  * "use client" — fully dynamic, talks to /api/admin/* endpoints
  *
  * Tabs: Overview · Users · Orders · Payments · Support · Audit Log
@@ -509,7 +509,7 @@ export default function AdminDashboard() {
         {/* ── Sidebar ── */}
         <aside className="sidebar">
           <div className="sb-logo">
-            <img src="/logo.png" alt="FrankStat" className="sb-logo-img"/>
+            <img src="/logo.png" alt="FranStat" className="sb-logo-img"/>
             <span className="sb-pill">Admin</span>
           </div>
           <nav className="sb-nav">
@@ -1008,7 +1008,7 @@ export default function AdminDashboard() {
               <Field label="Expected Ready (date & time)"><input type="datetime-local" style={inp} value={oForm.expectedReadyAt} onChange={e=>setOForm(f=>({...f,expectedReadyAt:e.target.value}))}/></Field>
               <Field label="Special Notes"><textarea style={{...inp,minHeight:70,resize:"vertical"}} value={oForm.specialNotes} onChange={e=>setOForm(f=>({...f,specialNotes:e.target.value}))}/></Field>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0 12px"}}>
-                <Field label="Discount Code"><input style={inp} value={oForm.discountCode} onChange={e=>setOForm(f=>({...f,discountCode:e.target.value}))} placeholder="e.g. FRANKSTAT10"/></Field>
+                <Field label="Discount Code"><input style={inp} value={oForm.discountCode} onChange={e=>setOForm(f=>({...f,discountCode:e.target.value}))} placeholder="e.g. FRANSTAT10"/></Field>
                 <Field label="Discount Amount (KES)"><input type="number" min="0" style={inp} value={oForm.discountAmount} onChange={e=>setOForm(f=>({...f,discountAmount:e.target.value}))}/></Field>
               </div>
               <Field label="Admin Note (for status change)"><textarea style={{...inp,minHeight:60,resize:"vertical"}} value={oForm.note} onChange={e=>setOForm(f=>({...f,note:e.target.value}))} placeholder="Reason for change — saved in status history"/></Field>

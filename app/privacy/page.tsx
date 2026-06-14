@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Frankstat Printing Solutions",
-  description: "Frankstat Printing Solutions' Privacy Policy. Learn how we collect, use, and protect your personal data in compliance with Kenyan data protection law.",
+  title: "Privacy Policy — Franstat Printing Solutions",
+  description: "Franstat Printing Solutions' Privacy Policy. Learn how we collect, use, and protect your personal data in compliance with Kenyan data protection law.",
 };
 
 const LAST_UPDATED = "11 June 2026";
@@ -163,7 +163,7 @@ export default function PrivacyPage() {
 
       <div className="page-wrap">
         <div className="page-header">
-          <Link href="/" className="back-link">← Back to Frankstat</Link>
+          <Link href="/" className="back-link">← Back to Franstat</Link>
           <div className="eyebrow">Legal</div>
           <h1 className="page-title">Privacy Policy</h1>
           <p className="page-meta">Last updated: <strong>{LAST_UPDATED}</strong></p>
@@ -199,17 +199,17 @@ export default function PrivacyPage() {
         </nav>
 
         <div className="highlight-box yel">
-          <strong>Your privacy matters to us.</strong> This Privacy Policy explains how Frankstat Printing Solutions collects, uses, and protects your personal data in accordance with Kenya's <strong>Data Protection Act, 2019</strong> and applicable regulations. Please read it carefully.
+          <strong>Your privacy matters to us.</strong> This Privacy Policy explains how Franstat Printing Solutions collects, uses, and protects your personal data in accordance with Kenya's <strong>Data Protection Act, 2019</strong> and applicable regulations. Please read it carefully.
         </div>
 
         {/* Section 1 */}
         <section className="section" id="p1">
           <div className="section-num">01</div>
           <h2 className="section-title">Who We Are</h2>
-          <p>Frankstat Printing Solutions ("Frankstat", "we", "us") is a printing and branding business based in Nairobi, Kenya. We operate the Frankstat website and online ordering platform at frankstat.com.</p>
-          <p>For the purposes of the Data Protection Act 2019, Frankstat is the <strong style={{color:"#fff"}}>Data Controller</strong> responsible for your personal information.</p>
+          <p>Franstat Printing Solutions ("Franstat", "we", "us") is a printing and branding business based in Nairobi, Kenya. We operate the Franstat website and online ordering platform at franstat.com.</p>
+          <p>For the purposes of the Data Protection Act 2019, Franstat is the <strong style={{color:"#fff"}}>Data Controller</strong> responsible for your personal information.</p>
           <ul className="list">
-            <li><strong style={{color:"#fff"}}>Contact:</strong> support@frankstat.com</li>
+            <li><strong style={{color:"#fff"}}>Contact:</strong> support@franstat.com</li>
             <li><strong style={{color:"#fff"}}>Phone:</strong> +254 700 000 000</li>
             <li><strong style={{color:"#fff"}}>Address:</strong> Nairobi, Kenya</li>
           </ul>
@@ -323,10 +323,10 @@ export default function PrivacyPage() {
             <li>Your M-Pesa phone number is transmitted to Safaricom to trigger the STK push prompt</li>
             <li>Safaricom returns a transaction receipt number which we store against your order</li>
             <li>We store the payment amount, status, and receipt — but never your M-Pesa PIN</li>
-            <li>Full card numbers or banking credentials are never collected or stored by Frankstat</li>
+            <li>Full card numbers or banking credentials are never collected or stored by Franstat</li>
           </ul>
           <div className="highlight-box mag">
-            <strong>We never store your M-Pesa PIN.</strong> The PIN is entered directly on your handset and is never transmitted to or seen by Frankstat.
+            <strong>We never store your M-Pesa PIN.</strong> The PIN is entered directly on your handset and is never transmitted to or seen by Franstat.
           </div>
         </section>
 
@@ -378,7 +378,7 @@ export default function PrivacyPage() {
               </div>
             ))}
           </div>
-          <p>To exercise any of these rights, email us at <strong style={{color:"#fff"}}>privacy@frankstat.com</strong> with your full name and account email. We will respond within 30 days.</p>
+          <p>To exercise any of these rights, email us at <strong style={{color:"#fff"}}>privacy@franstat.com</strong> with your full name and account email. We will respond within 30 days.</p>
         </section>
 
         {/* Section 10 */}
@@ -426,7 +426,7 @@ export default function PrivacyPage() {
           <h2 className="section-title">Contact & Complaints</h2>
           <p>For any privacy-related queries or to exercise your rights, please contact our Data Protection point of contact:</p>
           <ul className="list">
-            <li><strong style={{color:"#fff"}}>Email:</strong> privacy@frankstat.com</li>
+            <li><strong style={{color:"#fff"}}>Email:</strong> privacy@franstat.com</li>
             <li><strong style={{color:"#fff"}}>Phone:</strong> +254 700 000 000</li>
           </ul>
           <p>If you are not satisfied with our response, you have the right to lodge a complaint with Kenya's data protection authority:</p>
@@ -438,7 +438,7 @@ export default function PrivacyPage() {
         </section>
 
         <div className="page-footer">
-          <span>© {new Date().getFullYear()} Frankstat Printing Solutions</span>
+          <span>© {new Date().getFullYear()} Franstat Printing Solutions</span>
           <span>
             <Link href="/terms">Terms of Service</Link>
             {" · "}

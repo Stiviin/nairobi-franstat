@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Frankstat Printing Solutions",
-  description: "Read the Terms of Service for Frankstat Printing Solutions. Understand your rights, obligations, and our service conditions before placing an order.",
+  title: "Terms of Service — Franstat Printing Solutions",
+  description: "Read the Terms of Service for Franstat Printing Solutions. Understand your rights, obligations, and our service conditions before placing an order.",
 };
 
 const LAST_UPDATED = "2026";
@@ -125,7 +125,7 @@ export default function TermsPage() {
 
       <div className="page-wrap">
         <div className="page-header">
-          <Link href="/" className="back-link">← Back to Frankstat</Link>
+          <Link href="/" className="back-link">← Back to Franstat</Link>
           <div className="eyebrow">Legal</div>
           <h1 className="page-title">Terms of Service</h1>
           <p className="page-meta">Last updated: <strong>{LAST_UPDATED}</strong></p>
@@ -163,14 +163,14 @@ export default function TermsPage() {
         </nav>
 
         <div className="highlight-box">
-          <strong>Please read these Terms carefully.</strong> By accessing or using the Frankstat platform — including our website, ordering system, and related services — you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.
+          <strong>Please read these Terms carefully.</strong> By accessing or using the Franstat platform — including our website, ordering system, and related services — you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.
         </div>
 
         {/* Section 1 */}
         <section className="section" id="s1">
           <div className="section-num">01</div>
           <h2 className="section-title">Acceptance of Terms</h2>
-          <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("Customer", "you") and Frankstat Printing Solutions ("Frankstat", "we", "us", "our"), a printing and branding business based in Nairobi, Kenya.</p>
+          <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("Customer", "you") and Franstat Printing Solutions ("Franstat", "we", "us", "our"), a printing and branding business based in Nairobi, Kenya.</p>
           <p>By creating an account, placing an order, or using any part of our platform, you confirm that you are at least 18 years old (or have the consent of a legal guardian), and that you have the authority to enter into these Terms.</p>
         </section>
 
@@ -178,7 +178,7 @@ export default function TermsPage() {
         <section className="section" id="s2">
           <div className="section-num">02</div>
           <h2 className="section-title">Services Provided</h2>
-          <p>Frankstat provides professional printing and branding services, including but not limited to:</p>
+          <p>Franstat provides professional printing and branding services, including but not limited to:</p>
           <ul className="list">
             <li>Large-format banner and poster printing</li>
             <li>3D signage design and fabrication</li>
@@ -198,7 +198,7 @@ export default function TermsPage() {
           <ul className="list">
             <li>You must provide accurate and complete information during registration.</li>
             <li>You are solely responsible for all activity that occurs under your account.</li>
-            <li>You must notify us immediately at <strong>support@frankstat.com</strong> if you suspect unauthorised access.</li>
+            <li>You must notify us immediately at <strong>support@franstat.com</strong> if you suspect unauthorised access.</li>
             <li>We reserve the right to suspend or terminate accounts that violate these Terms.</li>
           </ul>
           <p>Email verification is required before an account can be used to place orders. Unverified accounts will not be processed.</p>
@@ -208,11 +208,11 @@ export default function TermsPage() {
         <section className="section" id="s4">
           <div className="section-num">04</div>
           <h2 className="section-title">Orders & Artwork</h2>
-          <p>All orders are subject to review and acceptance by Frankstat. Submission of an order does not constitute a binding contract until we confirm acceptance and receive the required payment.</p>
+          <p>All orders are subject to review and acceptance by Franstat. Submission of an order does not constitute a binding contract until we confirm acceptance and receive the required payment.</p>
           <ul className="list">
             <li>You are responsible for supplying print-ready artwork in the correct format and resolution. We recommend a minimum of 150 DPI for large formats and 300 DPI for small formats.</li>
-            <li>Frankstat is not responsible for print quality issues arising from low-resolution, incorrect colour profiles (we print in CMYK), or design errors in customer-supplied files.</li>
-            <li>We offer a free artwork review before production begins. Any design adjustments by Frankstat beyond minor corrections may attract additional charges.</li>
+            <li>Franstat is not responsible for print quality issues arising from low-resolution, incorrect colour profiles (we print in CMYK), or design errors in customer-supplied files.</li>
+            <li>We offer a free artwork review before production begins. Any design adjustments by Franstat beyond minor corrections may attract additional charges.</li>
             <li>Orders are confirmed only after artwork approval and deposit payment.</li>
             <li>Artwork files uploaded to our platform are stored securely and used solely for fulfilling your order.</li>
           </ul>
@@ -241,7 +241,7 @@ export default function TermsPage() {
           <p>We process payments via Safaricom M-Pesa (Lipa Na M-Pesa STK Push). By initiating an M-Pesa payment, you agree to Safaricom's applicable terms and conditions.</p>
           <ul className="list">
             <li>You must ensure the M-Pesa number you provide is registered in your name or that you have authority to transact from it.</li>
-            <li>Frankstat is not responsible for failed transactions caused by network issues, incorrect PINs, or M-Pesa service downtime.</li>
+            <li>Franstat is not responsible for failed transactions caused by network issues, incorrect PINs, or M-Pesa service downtime.</li>
             <li>M-Pesa transaction receipts are stored and can be accessed from your order dashboard.</li>
             <li>Disputed M-Pesa charges must be reported within 7 days of the transaction date.</li>
           </ul>
@@ -258,7 +258,7 @@ export default function TermsPage() {
             <li>Sublimation and heat-press garments: 2–5 working days</li>
             <li>Business cards and stationery: 24–48 hours</li>
           </ul>
-          <p>Rush orders may be accommodated at an additional fee, subject to capacity. Frankstat is not liable for delays caused by events beyond our reasonable control, including supplier delays, power outages, or public holidays.</p>
+          <p>Rush orders may be accommodated at an additional fee, subject to capacity. Franstat is not liable for delays caused by events beyond our reasonable control, including supplier delays, power outages, or public holidays.</p>
           <div className="highlight-box">
             <strong>Delivery:</strong> Delivery within Nairobi is available at an additional charge quoted at the time of order. You may also collect your order from our premises at no extra cost. Risk of loss passes to you upon delivery or collection.
           </div>
@@ -285,10 +285,10 @@ export default function TermsPage() {
         <section className="section" id="s9">
           <div className="section-num">09</div>
           <h2 className="section-title">Intellectual Property</h2>
-          <p>You retain all intellectual property rights to the artwork and designs you upload. By submitting artwork to Frankstat, you grant us a non-exclusive, royalty-free licence to reproduce your artwork solely for the purpose of fulfilling your order.</p>
+          <p>You retain all intellectual property rights to the artwork and designs you upload. By submitting artwork to Franstat, you grant us a non-exclusive, royalty-free licence to reproduce your artwork solely for the purpose of fulfilling your order.</p>
           <ul className="list">
             <li>You warrant that you own or have the necessary licences for all artwork submitted, and that printing it does not infringe any third-party rights.</li>
-            <li>Frankstat reserves the right to refuse any order involving artwork that appears to infringe copyright, trademarks, or any applicable law.</li>
+            <li>Franstat reserves the right to refuse any order involving artwork that appears to infringe copyright, trademarks, or any applicable law.</li>
             <li>We may use anonymised or generic examples of our printed work in marketing materials unless you explicitly opt out.</li>
           </ul>
         </section>
@@ -297,7 +297,7 @@ export default function TermsPage() {
         <section className="section" id="s10">
           <div className="section-num">10</div>
           <h2 className="section-title">Limitation of Liability</h2>
-          <p>To the maximum extent permitted by Kenyan law, Frankstat's total liability to you for any claim arising out of or relating to these Terms or our services shall not exceed the amount you paid for the specific order giving rise to the claim.</p>
+          <p>To the maximum extent permitted by Kenyan law, Franstat's total liability to you for any claim arising out of or relating to these Terms or our services shall not exceed the amount you paid for the specific order giving rise to the claim.</p>
           <p>We are not liable for:</p>
           <ul className="list">
             <li>Indirect, incidental, or consequential losses including lost profits or business interruption</li>
@@ -351,15 +351,15 @@ export default function TermsPage() {
           <h2 className="section-title">Contact Us</h2>
           <p>If you have any questions about these Terms, please contact us:</p>
           <ul className="list">
-            <li><strong style={{color:"#fff"}}>Email:</strong> support@frankstat.com</li>
+            <li><strong style={{color:"#fff"}}>Email:</strong> support@franstat.com</li>
             <li><strong style={{color:"#fff"}}>Phone / WhatsApp:</strong> +254 700 000 000</li>
-            <li><strong style={{color:"#fff"}}>Address:</strong> Frankstat Printing Solutions, Nairobi, Kenya</li>
+            <li><strong style={{color:"#fff"}}>Address:</strong> Franstat Printing Solutions, Nairobi, Kenya</li>
           </ul>
           <p>For account-related disputes, you may also open a support ticket directly from your dashboard.</p>
         </section>
 
         <div className="page-footer">
-          <span>© {new Date().getFullYear()} Frankstat Printing Solutions</span>
+          <span>© {new Date().getFullYear()} Franstat Printing Solutions</span>
           <span>
             <Link href="/privacy">Privacy Policy</Link>
             {" · "}

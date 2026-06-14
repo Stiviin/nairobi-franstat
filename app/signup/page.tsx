@@ -407,7 +407,7 @@ export default function SignupPage() {
         {/* ── LEFT PANEL ── */}
         <div className="panel-left">
           <Link href="/" className="panel-logo">
-            <img src="/logo.png" alt="Frankstat" className="logo-img" />
+            <img src="/logo.png" alt="Franstat" className="logo-img" />
           </Link>
 
           <div className="panel-middle">
@@ -417,7 +417,7 @@ export default function SignupPage() {
               <span className="m">Every time.</span>
             </h1>
             <p className="panel-sub">
-              Join businesses and event organisers across Nairobi who trust Frankstat for premium printing.
+              Join businesses and event organisers across Nairobi who trust Franstat for premium printing.
             </p>
             <div className="perks">
               {[
@@ -435,7 +435,7 @@ export default function SignupPage() {
           </div>
 
           <div className="panel-bottom">
-            <p className="panel-bottom-text">© {new Date().getFullYear()} Frankstat Printing Solutions · Nairobi, Kenya</p>
+            <p className="panel-bottom-text">© {new Date().getFullYear()} Franstat Printing Solutions · Nairobi, Kenya</p>
           </div>
         </div>
 
@@ -448,7 +448,7 @@ export default function SignupPage() {
                 <div className="success-circle">✓</div>
                 <div className="success-title">Account Created!</div>
                 <p className="success-desc">
-                  Welcome to Frankstat, <strong>{form.fullName.split(" ")[0]}</strong>!<br />
+                  Welcome to Franstat, <strong>{form.fullName.split(" ")[0]}</strong>!<br />
                   We've sent a verification link to <strong>{form.email}</strong>.<br />
                   Check your inbox to activate your account.
                 </p>
